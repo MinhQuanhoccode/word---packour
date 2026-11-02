@@ -6,9 +6,14 @@ import { Users, Copy, Play, Loader, Trophy, AlertTriangle, KeySquare, HelpCircle
 
 // --- FIREBASE INITIALIZATION ---
 // MUST BE OUTSIDE COMPONENT TO PREVENT RE-INITIALIZATION
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-    // Fallback dummy config for local testing if needed, though it will fail without real credentials
-    apiKey: "dummy", authDomain: "dummy", projectId: "dummy"
+const firebaseConfig = {
+  apiKey: "AIzaSyBNk69D4THSSmgEwPD8US9fMld9DgqplE0",
+  authDomain: "word-packour-9e1e8.firebaseapp.com",
+  projectId: "word-packour-9e1e8",
+  storageBucket: "word-packour-9e1e8.firebasestorage.app",
+  messagingSenderId: "644948280530",
+  appId: "1:644948280530:web:e173fd38c02b1403a8190b",
+  measurementId: "G-B8TE7Y9VBZ"
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
