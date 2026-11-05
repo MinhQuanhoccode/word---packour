@@ -1,0 +1,16 @@
+{
+  "name": "@project/shared",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./index.ts",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^2.0.0"
+  }
+}

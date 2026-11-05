@@ -1,0 +1,29 @@
+{
+  "name": "@project/server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma": "node scripts/prisma.cjs",
+    "db:check": "pnpm run build && node dist/scripts/check-db.js",
+    "db:seed": "pnpm run build && node dist/scripts/seed-words.js"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^2.0.0",
+    "@prisma/client": "6.19.0",
+    "@project/shared": "workspace:*",
+    "colyseus": "^0.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.0",
+    "@types/node": "^20.0.0",
+    "prisma": "6.19.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}
